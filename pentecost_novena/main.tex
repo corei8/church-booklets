@@ -1,0 +1,162 @@
+% \documentclass[extrafontsizes, letterpaper, 11pt]{memoir} % PRIEST
+\documentclass[extrafontsizes, statementpaper, 10pt]{memoir}
+
+\setlength\parindent{0pt}
+
+% \usepackage{priest}
+\usepackage{people}
+\usepackage{parallel}
+\usepackage[latin, american]{babel}
+
+\newcommand\verses[2]{
+    \ParallelLText{
+    \selectlanguage{latin}
+    #1
+    }
+    \ParallelRText{
+    \selectlanguage{american}
+    #2
+    }
+    \ParallelPar
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+\mytitle
+
+\gregorioscore{Veni.gabc}
+
+\begin{center}
+    Come, Holy Ghost, Creator blest,\\
+    And in our souls take up Thy rest,\\
+    Come with thy grace and heavenly aid,\\
+    And fill the hearts which Thou hast made.
+\end{center}
+
+\begin{Parallel}[c]{}{}
+
+\verses{
+Qui d\'iceris Par\'aclitus,\\
+Alt\'issimi donum Dei,\\
+Fons vivus, ignis, c\'aritas,\\
+Et spirit\'alis \'unctio.
+}{
+To Thee, the Comforter, do we cry,\\
+To Thee, the gift of God most high,\\
+The fount of life, the fire of love,\\
+The soul’s anointing from above.
+}
+
+\verses{
+Tu, septif\'ormis m\'unere,\\
+D\'ig\textit{i}tus pat\'ern\ae\ d\'exter\ae ,\\
+Tu rite prom\'issum Patris,\\
+Serm\'one ditans g\'uttura.
+}{
+The sevenfold gifs of grace are Thine,\\
+O Finger of the hand Divine;\\
+True promise of the Father Thou,\\
+Who dost the tongue with speech endow.
+}
+
+\verses{
+Acc\'ende lumen s\'ensibus:\\
+Inf\'und\textit{e} am\'orem c\'ordibus:\\
+Inf\'irma nostri c\'orporis\\
+Virt\'ute firmans p\'erpeti.
+}{
+Thy light to every thought impart,\\
+And shed Thy love in every heart;\\
+Our body’s poor infirmity\\
+With strength perpetual fortify.
+}
+
+\verses{
+Hostem rep\'ellas l\'ongius,\\
+Pac\'emque dones pr\'otinus:\\
+Duct\'ore sic te pr\'\ae vio\\
+Vit\'emus omne n\'oxium.
+}{
+Our mortal foe afar repel,\\
+Grant us henceforth in peace to dwell;\\
+If though be our preventing guide,\\
+No evil can our steps betide.
+}
+
+\verses{
+Per te sci\'amus da Patrem,\\
+Nosc\'amus atque F\'ilium;\\
+Tequ\textit{e} utri\'usque Sp\'iritum\\
+Cred\'amus omni t\'empore.
+}{
+Make Thou to us the Father known;\\
+Teach us th’ Eternal Son to own,\\
+And Thee, Whose name we ever bless,\\
+Of Both the Spirit to confess.
+}
+
+\verses{
+Deo Patri sit gl\'oria,\\
+Et F\'ilio, qu\textit{i} a m\'ortuis\\
+Surr\'exit, ac Par\'aclito,\\
+In s\ae cul\'orum s\ae cula.
+Amen.
+}{
+All glory while the ages run\\
+Be to the Father and the Son,\\
+Who rose from death; the same to Thee,\\
+O Holy Ghost, eternally.
+Amen.
+}
+
+% \rubric{The celebrant blesses the crown, held before him by an acolyte:}
+
+\verses{
+\vbar Em\'itte Sp\'iritum tuum et creab\'untur; \\
+\rbar Et renov\'abis f\'aciem t\'err\ae . \\
+}{
+\vbar Send forth Thy Spirit and they shall be created; \\
+\rbar And Thou shalt renew the face of the earth. \\
+}
+
+\verses{
+\oremus
+}{
+\LetUsPray
+}
+
+\verses{
+\setlength{\linewidth}{\hsize}\lettrine{D}{eus,} qui corda fid\'elium Sancti
+Sp\'iritus illustrati\'one docu\'isti: da nobis in e\'odem Sp\'iritu recta s\'apere; et de
+ejus semper consolati\'one guad\'ere. Per Christum D\'ominum nostrum.
+}{
+\setlength{\linewidth}{\hsize}\lettrine{O}{ God,} who didst teach the hearts of
+Thy faithful by sending them the light of Thy Holy Ghost, grant us by the same
+Spirit to have right judgment of all things, and evermore to rejoice in His
+consolation. Through Christ our Lord.
+}
+
+\verses{
+\rbar Amen.
+}{
+\rbar Amen.
+}
+
+\end{Parallel}
+
+\vfill
+
+{\small 
+    An indulgence of 10 years on any day of the novena;
+
+    A plenary indulgence, if they take part in at least five of the exercises,
+    and moreover go to confession, receive Holy Communion and pray for the Holy
+    Father's intention.
+}
+
+\rubric{\footnotesize (Pius IX, Audience, Jan. 3, 1849; S. C. of Bishops and Regulars, Jan.
+28, 1850; S. C. Ind., 26, 1876; Brief, May 5, 1859; Encyclical Letter ``Divinum
+illud munus'', May 9, 1897; S. P. Ap., May 12, 1934.)}
+
+\end{document}

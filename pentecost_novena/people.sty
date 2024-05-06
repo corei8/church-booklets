@@ -1,0 +1,84 @@
+\ProvidesPackage{people}
+
+\RequirePackage[autocompile]{gregoriotex}
+% \RequirePackage[top=1in, bottom=1in, right=1.25in, left=1.25in]{geometry}
+% \RequirePackage{tgothic}
+% \RequirePackage{yfonts}
+\RequirePackage{fontspec}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[latin, american]{babel}
+\RequirePackage{lettrine}
+\RequirePackage{microtype}
+\RequirePackage{graphicx}
+\graphicspath{ {./images/} }
+
+
+\settypeblocksize{7in}{3.8in}{*}
+\setlrmargins{.6in}{*}{*}
+\setulmargins{.6in}{*}{*}
+\checkandfixthelayout
+
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Minion3}
+\DeclareTextFontCommand\lincoln{\fontfamily{Lincoln Text Pro}}
+
+\gresetlinecolor{gregoriocolor}
+
+\newcommand\rubric[1]{
+    \bigskip
+    {\color{gregoriocolor}\small #1}
+    \smallskip
+}
+
+\newcommand\oremus[0]{
+    \medskip
+        {\centering\textit{\color{gregoriocolor}\small Oremus.}}
+    \smallskip
+}
+
+\newcommand\LetUsPray[0]{
+    \medskip
+        {\centering\textit{\color{gregoriocolor}\small Let us pray.}}
+    \smallskip
+}
+
+\newcommand\vbar[0]{
+    {\color{gregoriocolor}\Vbar.}
+}
+
+\newcommand\rbar[0]{
+    {\color{gregoriocolor}\Rbar.}
+}
+
+\newcommand\Cross[0]{
+    {\color{gregoriocolor}\grecross}
+}
+
+\newcommand\mytitle[0]{
+    \begin{center}
+        {\noindent\color{gregoriocolor} Novena in Honor of the Holy Ghost before the}\\
+        \vspace{.25in}
+        % {\tgothfamily\noindent\HUGE Blessed Virgin Mary}
+        {\noindent\HUGE\scshape Feast of Pentecost}
+    \end{center}
+
+    \vspace{.125in}
+    {\color{gregoriocolor}\hrule}
+    \vspace{.25in}
+
+    \vfill
+
+    \begin{figure}[h]
+        \noindent\includegraphics[width=\textwidth]{frontpiece}
+    \end{figure}
+
+    \vfill
+
+
+    \begin{center}
+        {\noindent\tiny\itshape Queen of All Saints Chapel}
+    \end{center}
+
+    \pagebreak
+    }
